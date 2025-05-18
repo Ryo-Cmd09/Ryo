@@ -1986,3 +1986,139 @@ body {
     border-radius: 23px;
   }
 }
+
+---------------------------------------------
+plan Style
+---------------------------------------------
+*/
+
+.plan {
+  position: relative;
+}
+
+.plan::before {
+  content: url(../images/contact-left.jpg);
+  top: -60px;
+  left: 0;
+  position: absolute;
+  width: 103px;
+  height: 464px;
+  z-index: -1;
+}
+
+.plan::after {
+  content: url(../images/contact-left.jpg);
+  bottom: -90px;
+  right: 0;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: absolute;
+  width: 103px;
+  height: 464px;
+  z-index: -1;
+}
+
+.plan .section-heading {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.plan .section-heading .line-dec {
+  margin: 0 auto 20px auto;
+}
+
+.plan .naccs {
+  position: relative;
+  overflow: hidden;
+}
+
+.plan .naccs .menu {
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  padding: 25px 0px;
+  border-radius: 23px;
+  margin-bottom: 60px;
+}
+
+.plan .naccs .menu div {
+  border-right: 1px solid #e0e0e0;
+  width: 24.6%;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a2a2a;
+  cursor: pointer;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.plan .naccs .menu div.last-item {
+  border-right: none;
+}
+
+.plan .naccs .menu div.active {
+  color: #5b03e4;
+}
+
+.plan ul.nacc {
+  position: relative;
+  min-height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.plan ul.nacc li {
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(50px);
+  position: absolute;
+  list-style: none;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.plan ul.nacc li img {
+  padding-left: 45px;
+}
+
+.plan ul.nacc li h4 {
+  font-size: 30px;
+  color: #2a2a2a;
+  margin-bottom: 25px;
+}
+
+.plan ul.nacc li .line-dec {
+  background-color: #4700b9;
+  width: 60px;
+  height: 2px;
+  margin-bottom: 25px;
+}
+
+.plan ul.nacc li .info {
+  margin-top: 30px;
+}
+
+.plan ul.nacc li .info span {
+  display: inline-block;
+  background-color: #5b03e4;
+  border-radius: 20px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  padding: 0px 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+.plan ul.nacc li .info span.last-span {
+  margin-right: 0px;
+}
+
+.plan ul.nacc li.active {
+  position: relative;
+  transition-delay: 0.3s;
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0px);
+}
