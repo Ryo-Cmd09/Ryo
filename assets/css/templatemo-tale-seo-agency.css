@@ -913,7 +913,7 @@ Services Style
 }
 
 .services::before {
-  content: url(../images/services-left.svg);
+  content: url(../images/pokemon_cohete_844x714.png);
   top: 120px;
   left: 0;
   position: absolute;
